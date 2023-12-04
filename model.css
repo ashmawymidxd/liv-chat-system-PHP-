@@ -1,0 +1,104 @@
+.model {
+  width: 450px;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: calc(70% - 300px);
+  margin: auto;
+  box-shadow: 0 8px 15px #bebebe;
+  border-radius: 5px;
+  z-index: 1000;
+  transition-duration: 500ms;
+
+  
+}
+
+.model .close {
+  outline: none;
+  border: none;
+  height: 100%;
+  font-size: 25px;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 5px;
+  color: rgb(226, 226, 226);
+  transition-duration: 300ms;
+}
+.model .close:hover {
+  color: red;
+}
+.model .ok {
+  outline: none;
+  border: none;
+  height: 100%;
+  font-size: 17px;
+  background-color: rgba(0, 0, 255, 0.747);
+  border-radius: 5px;
+  color: white;
+  width: 100px;
+  transition-duration: 300ms;
+}
+.model .ok:hover {
+  background-color: rgba(0, 0, 255, 0.947);
+}
+.model .cancle {
+  outline: none;
+  border: none;
+  height: 100%;
+  font-size: 17px;
+  background-color: rgba(209, 209, 209, 0.685);
+  border-radius: 5px;
+  color: white;
+  width: 100px;
+  color: black;
+  transition-duration: 300ms;
+}
+.model .cancle:hover {
+  background-color: rgba(209, 209, 209, 0.985);
+}
+.show_model {
+  outline: none;
+  border: none;
+  height: 100%;
+  font-size: 20px;
+  background-color: rgba(0, 0, 255, 0.76);
+  border-radius: 5px;
+  color: white;
+  width: 100px;
+  padding: 5px 10px;
+  transition-duration: 300ms;
+}
+
+.show_model:hover {
+  background-color: rgb(0, 0, 255);
+}
+.show_model:focus {
+  background-color: rgb(0, 0, 255);
+}
+
+.model div:nth-child(1) {
+  height: 35px;
+  display: flex;align-items: center;justify-content: space-between;
+  padding: 5px 5px;
+  border-bottom: 1px solid #ddd;
+  font-family: sans-serif;
+  letter-spacing: 0.8px;
+}
+.model div:nth-child(2) {
+  height: 80px;
+  padding: 5px 5px;
+  font-size: 17px;
+  text-align: center;
+  font-family: sans-serif;
+  border-bottom: 1px solid #ddd;
+}
+.model div:nth-child(3) {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 5px 3px;
+  gap: 10px;
+}
+.actives {
+  opacity: 0;
+}
